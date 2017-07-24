@@ -3,7 +3,7 @@
 header('Content-Type: application/json');
 ob_start();
 session_start();
-$csv = array_map('str_getcsv', file('data/dialog.csv'));
+$csv = array_map('str_getcsv', file('https://github.com/ra7veer/test/blob/master/data/dialog.csv'));
 $json = file_get_contents("php://input");
 $data = json_decode($json, true);
 $output = [
